@@ -31,7 +31,7 @@ SUDO_USERS = [int(_x) for _x in SUDO_USERS]
 if OWNER_ID not in SUDO_USERS:
     SUDO_USERS.append(OWNER_ID)
 ADMIN = int(environ['ADMIN'])
-AUTH_CHATS = environ.get('AUTH_CHATS',None ).split()
+AUTH_CHATS = environ.get('AUTH_CHATS', None).split()
 AUTH_CHATS = [int(_x) for _x in AUTH_CHATS]
 START_PIC = environ['START_PIC']
 LOG_GROUP = environ.get("LOG_GROUP", None)
@@ -40,6 +40,6 @@ if LOG_GROUP:
 BUG = environ.get("BUG", None)
 if BUG:
     BUG = int(BUG)
-GENIUS_API = environ.get("GENIUS_API",None)
+GENIUS_API = environ.get("GENIUS_API", None)
 if GENIUS_API:
     GENIUS_API = GENIUS_API
